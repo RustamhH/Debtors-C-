@@ -1,0 +1,15 @@
+D:\c#\Debtors\Debtors\bin\Debug\net6.0\Debtors.exe
+D:\c#\Debtors\Debtors\bin\Debug\net6.0\Debtors.deps.json
+D:\c#\Debtors\Debtors\bin\Debug\net6.0\Debtors.runtimeconfig.json
+D:\c#\Debtors\Debtors\bin\Debug\net6.0\Debtors.dll
+D:\c#\Debtors\Debtors\bin\Debug\net6.0\Debtors.pdb
+D:\c#\Debtors\Debtors\obj\Debug\net6.0\Debtors.csproj.AssemblyReference.cache
+D:\c#\Debtors\Debtors\obj\Debug\net6.0\Debtors.GeneratedMSBuildEditorConfig.editorconfig
+D:\c#\Debtors\Debtors\obj\Debug\net6.0\Debtors.AssemblyInfoInputs.cache
+D:\c#\Debtors\Debtors\obj\Debug\net6.0\Debtors.AssemblyInfo.cs
+D:\c#\Debtors\Debtors\obj\Debug\net6.0\Debtors.csproj.CoreCompileInputs.cache
+D:\c#\Debtors\Debtors\obj\Debug\net6.0\Debtors.dll
+D:\c#\Debtors\Debtors\obj\Debug\net6.0\refint\Debtors.dll
+D:\c#\Debtors\Debtors\obj\Debug\net6.0\Debtors.pdb
+D:\c#\Debtors\Debtors\obj\Debug\net6.0\Debtors.genruntimeconfig.cache
+D:\c#\Debtors\Debtors\obj\Debug\net6.0\ref\Debtors.dll
