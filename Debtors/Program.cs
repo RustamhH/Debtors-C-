@@ -22,7 +22,7 @@ namespace Debtors
         static void Main(string[] args)
         {
             List<Debtor> debtors = new List<Debtor> {
-                new Debtor("Shirley T. Qualls", DateTime.Parse("March 30, 1932"), "530-662-7732", "ShirleyTQualls@teleworm.us", "3565 Eagles Nest Drive Woodland, CA 95695", 2414),
+                new Debtor("Shirley T. Qualls", DateTime.Parse("March 30, 1932"), "123-456-7890", "ShirleyTQualls@teleworm.us", "3565 Eagles Nest Drive Woodland, CA 95695", 2414),
                 new Debtor("Danielle W. Grier", DateTime.Parse("October 18, 1953"), "321-473-4178", "DanielleWGrier@rhyta.com", "1973 Stoneybrook Road Maitland, FL 32751", 3599),
                 new Debtor("Connie W. Lemire", DateTime.Parse("June 18, 1963"), "828-321-3751", "ConnieWLemire@rhyta.com", "2432 Hannah Street Andrews, NC 28901", 1219),
                 new Debtor("Coy K. Adams", DateTime.Parse("March 1, 1976"), "410-347-1307", "CoyKAdams@dayrep.com", "2411 Blue Spruce Lane Baltimore, MD 21202", 3784),
@@ -54,7 +54,7 @@ namespace Debtors
                 new Debtor("Donna C. Sandoval", DateTime.Parse("December 13, 1947"), "540-482-5463", "DonnaCSandoval@rhyta.com", "675 Jehovah Drive Martinsville, VA 24112", 8363),
                 new Debtor("Robert T. Taylor", DateTime.Parse("August 17, 1932"), "270-596-6442", "RobertTTaylor@armyspy.com", "2812 Rowes Lane Paducah, KY 42001", 7785),
                 new Debtor("Donna W. Alamoddgdgd", DateTime.Parse("December 9, 1948"), "978-778-2533", "DonnaWAlamo@teleworm.us", "4367 Christie Way Marlboro, MA 01752", 10030),
-                new Debtor("Amy R. Parmer", DateTime.Parse("May 19, 1995"), "480-883-4934", "AmyRParmer@armyspy.com", "85 Elmwood Avenue Chandler, AZ 85249", 5347),
+                new Debtor("Amy R. Parmer", DateTime.Parse("May 19, 1995"), "987-654-3210", "AmyRParmer@armyspy.com", "85 Elmwood Avenue Chandler, AZ 85249", 5347),
                 new Debtor("Newton K. Evans", DateTime.Parse("October 8, 1986"), "303-207-9084", "NewtonKEvans@rhyta.com", "3552 Columbia Road Greenwood Village, CO 80111", 9838),
                 new Debtor("Kathleen C. Chaney", DateTime.Parse("January 5, 1949"), "605-245-3513", "KathleenCChaney@rhyta.com", "316 Elsie Drive Fort Thompson, SD 57339", 1672),
                 new Debtor("Manuel C. Johnson", DateTime.Parse("February 23, 1957"), "606-247-2659", "ManuelCJohnson@jourrapide.com", "4146 May Street Sharpsburg, KY 40374", 9195),
@@ -75,67 +75,67 @@ namespace Debtors
 
             // 2) rhyta.com ve ya dayrep.com domenlerinde emaili olan borclulari cixartmag
 
-                //debtors.Where(d=> d.Email.EndsWith("rhyta.com") || d.Email.EndsWith("dayrep.com")).Print();
+            //debtors.Where(d=> d.Email.EndsWith("rhyta.com") || d.Email.EndsWith("dayrep.com")).Print();
 
 
 
             // 3) Yashi 26 - dan 36 - ya qeder olan borclulari cixartmag
 
-                //debtors.Where(d => d.BirthDay.Year > 1987 && d.BirthDay.Year < 1997).Print();
+            //debtors.Where(d => d.BirthDay.Year > 1987 && d.BirthDay.Year < 1997).Print();
 
 
 
 
             // 4) Borcu 5000 - den cox olmayan borclularic cixartmag
 
-                //debtors.Where(d => d.Debt <= 5000).Print();
+            //debtors.Where(d => d.Debt <= 5000).Print();
 
 
             // 5) Butov adi 18 simvoldan cox olan ve telefon nomresinde 2 ve ya 2 - den cox 7 reqemi olan borclulari cixartmaq
 
-                //debtors.Where(delegate (Debtor d) { return (d.FullName.Length > 18 && d.Phone.Count(di => di == '7') >= 2); }).Print();
+            //debtors.Where(delegate (Debtor d) { return (d.FullName.Length > 18 && d.Phone.Count(di => di == '7') >= 2); }).Print();
 
 
             // 7) Qishda anadan olan borclulari cixardmaq
 
-                //debtors.Where(d => d.BirthDay.Month == 12 || d.BirthDay.Month == 1 || d.BirthDay.Month == 2).Print();
+            //debtors.Where(d => d.BirthDay.Month == 12 || d.BirthDay.Month == 1 || d.BirthDay.Month == 2).Print();
 
 
             // 8) Borcu, umumi borclarin orta borcunnan cox olan borclulari cixarmaq ve evvel familyaya gore sonra ise meblegin azalmagina gore sortirovka etmek
 
-                //var middleDebt = 0;
-                //debtors.ForEach(d => middleDebt += d.Debt);
-                //middleDebt /= debtors.Count;
-                //List<Debtor> newdebtors = debtors.Where(d => d.Debt > middleDebt).ToList();
-                //newdebtors.Sort((d1, d2) => d1.FullName.Substring(d1.FullName.LastIndexOf(' ')).CompareTo(d2.FullName.Substring(d2.FullName.LastIndexOf(' '))));
-                //newdebtors.Print();
-                //newdebtors.Sort((d1, d2) => d2.Debt.CompareTo(d1.Debt));
-                //newdebtors.Print();
+            //var middleDebt = 0;
+            //debtors.ForEach(d => middleDebt += d.Debt);
+            //middleDebt /= debtors.Count;
+            //List<Debtor> newdebtors = debtors.Where(d => d.Debt > middleDebt).ToList();
+            //newdebtors.Sort((d1, d2) => d1.FullName.Substring(d1.FullName.LastIndexOf(' ')).CompareTo(d2.FullName.Substring(d2.FullName.LastIndexOf(' '))));
+            //newdebtors.Print();
+            //newdebtors.Sort((d1, d2) => d2.Debt.CompareTo(d1.Debt));
+            //newdebtors.Print();
 
 
 
 
             // 9) Telefon nomresinde 8 olmayan borclularin yalniz familyasin, yashin ve umumi borcun meblegin cixarmaq
 
-                //debtors.ForEach(delegate (Debtor d) { if (!d.Phone.Contains('8')) Console.WriteLine(d.FullName.Substring(d.FullName.LastIndexOf(' ')) + " " + (2023-d.BirthDay.Year) + " " + d.Debt); });
+            //debtors.ForEach(delegate (Debtor d) { if (!d.Phone.Contains('8')) Console.WriteLine(d.FullName.Substring(d.FullName.LastIndexOf(' ')) + " " + (2023-d.BirthDay.Year) + " " + d.Debt); });
 
 
             // 11) Adinda ve familyasinda hec olmasa 3 eyni herf olan borclularin siyahisin cixarmaq ve onlari elifba sirasina gore sortirovka elemek
 
 
-                //var wantedList = new List<Debtor>();
-                //foreach (var kvp in debtors)
-                //{
-                //    var inner = kvp.FullName.GroupBy(c => c)
-                //     .ToDictionary(group => group.Key, group => group.Count());
-                //    foreach (var item in inner)
-                //    {
-                //        if (item.Value >= 3)
-                //            wantedList.Add(kvp);
-                //    }
-                //}
-                //wantedList.Sort((d1, d2) => d1.FullName[0].CompareTo(d2.FullName[0]));
-                //wantedList.Print();
+            //var wantedList = new List<Debtor>();
+            //foreach (var kvp in debtors)
+            //{
+            //    var inner = kvp.FullName.GroupBy(c => c)
+            //     .ToDictionary(group => group.Key, group => group.Count());
+            //    foreach (var item in inner)
+            //    {
+            //        if (item.Value >= 3)
+            //            wantedList.Add(kvp);
+            //    }
+            //}
+            //wantedList.Sort((d1, d2) => d1.FullName[0].CompareTo(d2.FullName[0]));
+            //wantedList.Print();
 
 
 
@@ -150,33 +150,33 @@ namespace Debtors
 
             // 13) borclulardan en coxu hansi ilde dogulubsa hemin ili cixartmaq
 
-                //Console.WriteLine(debtors.GroupBy(i => i.BirthDay.Year).OrderByDescending(grp => grp.Count())
-                //.Select(grp => grp.Key).First());
+            //Console.WriteLine(debtors.GroupBy(i => i.BirthDay.Year).OrderByDescending(grp => grp.Count())
+            //.Select(grp => grp.Key).First());
 
 
 
             // 14) Borcu en boyuk olan 5 borclunun siyahisini cixartmaq
 
-                //debtors.Sort((d1, d2) => d2.Debt.CompareTo(d1.Debt));
-                //Console.WriteLine(debtors[0]);
-                //Console.WriteLine(debtors[1]);
-                //Console.WriteLine(debtors[2]);
-                //Console.WriteLine(debtors[3]);
-                //Console.WriteLine(debtors[4]);
+            //debtors.Sort((d1, d2) => d2.Debt.CompareTo(d1.Debt));
+            //Console.WriteLine(debtors[0]);
+            //Console.WriteLine(debtors[1]);
+            //Console.WriteLine(debtors[2]);
+            //Console.WriteLine(debtors[3]);
+            //Console.WriteLine(debtors[4]);
 
 
 
             // 15) Butun borcu olanlarin borcunu cemleyib umumi borcu cixartmaq
 
-                //var totalDebt = 0;
-                //debtors.ForEach(d => totalDebt += d.Debt);
-                //Console.WriteLine(totalDebt);
+            //var totalDebt = 0;
+            //debtors.ForEach(d => totalDebt += d.Debt);
+            //Console.WriteLine(totalDebt);
 
 
 
             // 16) 2ci dunya muharibesin gormush borclularin siyahisi cixartmaq
 
-                //debtors.Where(d => d.BirthDay.Year < 1945).Print();
+            //debtors.Where(d => d.BirthDay.Year < 1945).Print();
 
 
 
@@ -188,42 +188,52 @@ namespace Debtors
 
 
 
-                //var wantedList = new List<Debtor>();
-                //foreach (var kvp in debtors)
-                //{
-                //    var inner = kvp.Phone.GroupBy(c => c)
-                //     .ToDictionary(group => group.Key, group => group.Count());
-                //    foreach (var item in inner)
-                //    {
-                //        if (item.Value==1)
-                //            wantedList.Add(kvp);
-                //    }
-                //}
-                //wantedList.Print();
+            //var wantedList = new List<Debtor>();
+            //foreach (var kvp in debtors)
+            //{
+            //    var inner = kvp.Phone.GroupBy(c => c)
+            //     .ToDictionary(group => group.Key, group => group.Count());
+
+            //    bool isUnique=true;
+            //    foreach (var item in inner)
+            //    {
+            //        if (item.Value != 1 && item.Key!='-')
+            //        {
+            //            isUnique = false;
+            //            break;
+            //        }
+                    
+            //    }
+            //    if(isUnique) wantedList.Add(kvp);
+
+            //}
+            //wantedList.Print();
+            
+            
 
 
 
 
             // 19) Tesevvur edek ki,butun borclari olanlar bugunden etibaren her ay 500 azn pul odeyecekler.Oz ad gunune kimi borcun oduyub qurtara bilenlerin siyahisin cixartmaq
 
-           
-                //debtors.Where(delegate (Debtor d)
-                //{
-                //    if (d.BirthDay.Month < DateTime.Now.Month)
-                //    {
-                //        return (12 - (d.BirthDay.Month - DateTime.Now.Month) * 500 >= d.Debt);
-                //    }
-                //    else if (d.BirthDay.Month > DateTime.Now.Month) return (d.BirthDay.Month - DateTime.Now.Month) * 500 >= d.Debt;
-                //    else return d.Debt<=500;
-                //}).Print();
-           
+
+            //debtors.Where(delegate (Debtor d)
+            //{
+            //    if (d.BirthDay.Month < DateTime.Now.Month)
+            //    {
+            //        return (12 - (d.BirthDay.Month - DateTime.Now.Month) * 500 >= d.Debt);
+            //    }
+            //    else if (d.BirthDay.Month > DateTime.Now.Month) return (d.BirthDay.Month - DateTime.Now.Month) * 500 >= d.Debt;
+            //    else return d.Debt<=500;
+            //}).Print();
+
 
 
 
 
             // 20) Adindaki ve familyasindaki herflerden "smile" sozunu yaza bileceyimiz borclularin siyahisini cixartmaq
 
-                //debtors.Where(d => d.FullName.Contains("s") && d.FullName.Contains("m") && d.FullName.Contains("i") && d.FullName.Contains("l") && d.FullName.Contains("e")).Print();
+            //debtors.Where(d => d.FullName.Contains("s") && d.FullName.Contains("m") && d.FullName.Contains("i") && d.FullName.Contains("l") && d.FullName.Contains("e")).Print();
 
 
 
